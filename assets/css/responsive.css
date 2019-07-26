@@ -1,0 +1,32 @@
+/* Large Mobile :480px. */
+@media (max-width: 480px) {
+    .canvas-filter-left{
+        width: 320px;
+    }
+    .canvas-filter-right{
+        width: 320px;
+    }
+    .canvas-filter-mobile{
+        display: none;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 481px) and (max-width: 768px) {
+    .canvas-filter-left{
+        width: 320px;
+    }
+    .canvas-filter-right{
+        width: 320px;
+    }
+    .canvas-filter-tablet{
+        display: none;
+    }
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) {
+    .canvas-filter-desktop{
+        display: none;
+    }
+}

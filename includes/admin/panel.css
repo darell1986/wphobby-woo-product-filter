@@ -1,0 +1,44 @@
+li.toplevel_page_whpf-panel img{
+    width: 26px;
+    height: 26px;
+    padding-top: 4px!important;
+}
+
+.whpf-panel .about-wrap .nav-tab{
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.whpf-panel .fl-badge {
+    background-image: url(images/icon.png)!important;
+}
+
+.whpf-panel .about-wrap .nav-tab-wrapper{
+    margin-bottom: 20px!important;
+}
+
+.whpf-panel .about-wrap .whpf-panel h2{
+    text-align: left;
+    max-width: 600px;
+}
+
+.whpf-panel .about-wrap .whpf-panel .inner-panel{
+    padding: 0 20px 30px 20px;
+    background-color: #FFF;
+    margin: 15px 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.1);
+}
+
+.whpf-panel .about-wrap .cols{display: flex;}
+.whpf-panel .about-wrap .inner-panel{flex:1;}
+.whpf-panel .inner-panel{
+    transition: opacity .3s;
+}
+.whpf-panel .inner-panel:hover{
+    opacity: 1!important;
+}
+.whpf-panel .inner-panel.success{border-color: green!important; opacity: .6}
+.whpf-panel .inner-panel.success h5{color: green!important;}

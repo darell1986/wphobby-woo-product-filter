@@ -1,0 +1,119 @@
+.woocommerce .woo-widget-layered-nav-list__item {
+    padding: 0 0 1px;
+    list-style: none;
+}
+
+.woocommerce .woo-widget-layered-nav-list__item--chosen a::before{
+    font-family: WooCommerce;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: .618em;
+    content: "";
+    text-decoration: none;
+    color: #a00;
+}
+
+.filter-overlay::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0;
+    z-index: 999;
+    visibility: visible;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    visibility: hidden;
+}
+.filter-overlay.open::before{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.canvas-filter-left {
+    position: fixed;
+    top: 0;
+    left: -430px;
+    width: 430px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999999;
+    padding: 40px;
+    overflow-y: auto;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.canvas-filter-right {
+    position: fixed;
+    top: 0;
+    right: -430px;
+    width: 430px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999999;
+    padding: 40px;
+    overflow-y: auto;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.canvas-filter-left.open {
+    left: 0;
+}
+
+.canvas-filter-right.open {
+    right: 0;
+}
+
+.canvas-filter-dark{
+    background-color: #010513
+}
+
+.canvas-filter-dark .widget .widget-title,
+.canvas-filter-dark .woo-product-filter .filter-button{
+    color: #fff;
+}
+
+.canvas-filter-dark .woo-product-filter-list .woo-widget-layered-nav-list__item a,
+.canvas-filter-dark .product-categories li a,
+.canvas-filter-dark .tagcloud a{
+    color: #bababa;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 34px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    color: #201f1f;
+    background-color: #f9f9f9;
+    z-index: 99;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    color: #201f1f;
+}
+
+.woo-product-filter .widget-title{
+    float:left;
+}
+
+.woo-product-filter .filter-button{
+    float: right;
+}
+
+.horizon-woo-product-filter .widget {
+    width: 33.33%;
+}
